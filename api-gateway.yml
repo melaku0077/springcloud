@@ -3,7 +3,7 @@ server:
   
 spring:
   application:
-    name: APIGateWay
+    name: api-gateway
   cloud:
     gateway:
       routes:
