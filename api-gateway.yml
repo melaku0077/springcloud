@@ -22,11 +22,11 @@ spring:
         - id: BookCommandService
           uri: lb://BookCommandService
           predicates:
-            - Path=/command/**
+            - Path=/bookservice/**
         - id: BookQueryService
           uri: lb://BookQueryService
           predicates:
-            - Path=/query/**
+            - Path=/books/**
 
   zipkin:
     base-url: http://localhost:9411/
